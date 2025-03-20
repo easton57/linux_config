@@ -38,59 +38,59 @@ There are others but I don't use them at this time and haven't customized them.
 ## NVIM
 
 ### Navigation
-SPACE P V: Open folder navigator
+* SPACE P V: Open folder navigator
 
 ### DAP Debugger
-SPACE D R: Open REPL
-SPACE D S: Open Stacks
-SPACE D W: Open Watches
-SPACE D B: Open Breakpoints
-SPACE D SHIFT S: Open Scopes
-SPACE D C: Open Console
-SPACE B: Toggle Breakpoint
-SPACE SHIFT B: Set Breakpoint with condiion
-F8: Debug continue/launch
-F10: Debug Step Over
-F11: Debug Step Into
-F12: Debug Step Out
+* SPACE D R: Open REPL
+* SPACE D S: Open Stacks
+* SPACE D W: Open Watches
+* SPACE D B: Open Breakpoints
+* SPACE D SHIFT S: Open Scopes
+* SPACE D C: Open Console
+* SPACE B: Toggle Breakpoint
+* SPACE SHIFT B: Set Breakpoint with condiion
+* F8: Debug continue/launch
+* F10: Debug Step Over
+* F11: Debug Step Into
+* F12: Debug Step Out
 
 ### Fugitive (GIT Tools)
-SPACE G S: Git info and some diff
-SPACE P: Git push
-SPACE N: Git pull
-SPACE T: Git push -u origin, opts
-gu: diffget //2
-gh: diffget //3
+* SPACE G S: Git info and some diff
+* SPACE P: Git push
+* SPACE N: Git pull
+* SPACE T: Git push -u origin, opts
+* gu: diffget //2
+* gh: diffget //3
 
 ### LSP
-CTRL P: Previous Item
-CTRL N: Next Item
-CTRL Y: Confirm Item
-CTRL SPACE: Complete
+* CTRL P: Previous Item
+* CTRL N: Next Item
+* CTRL Y: Confirm Item
+* CTRL SPACE: Complete
 
 ### Neotest
-SPACE T R: Run test
-SPACE T V: Summary Toggle
-SPACE T S: Test with suite
-SPACE T D: Test with DAP
-SPACE T O: Open test output
-SPACE T A: Run and open test output
+* SPACE T R: Run test
+* SPACE T V: Summary Toggle
+* SPACE T S: Test with suite
+* SPACE T D: Test with DAP
+* SPACE T O: Open test output
+* SPACE T A: Run and open test output
 
 ### Telescope
-SPACE P F: Search Files
-CTRL P: Git Files
-SPACE pws and SPACE pWs: Search for words
-SPACE P S: Search from command bar
-SPACE V H: Help Tags
+* SPACE P F: Search Files
+* CTRL P: Git Files
+* SPACE pws and SPACE pWs: Search for words
+* SPACE P S: Search from command bar
+* SPACE V H: Help Tags
 
 ### Trouble
-SPACE T T: Toggle Trouble
-SPACE [ T: Next Trouble
-SPACE ] T: Previous Trouble
+* SPACE T T: Toggle Trouble
+* SPACE [ T: Next Trouble
+* SPACE ] T: Previous Trouble
 
 ### Undotree
-SPACE U: View tree
+* SPACE U: View tree
 
 ### Zenmode
-SPACE z z: Zenmode width 90
-SPACE z Z: Zenmode width 80
+* SPACE z z: Zenmode width 90
+* SPACE z Z: Zenmode width 80
