@@ -1,8 +1,4 @@
 * {
-    border: none;
-    padding-top: 3px;
-    padding-right: 3px;
-    padding-left: 3px; 
     font-family: "Font Awesome", Roboto, Helvetica, Arial, sans-serif;
     font-size: 12px;
 }
@@ -14,8 +10,8 @@ window#waybar {
     border-radius: 10px;
 }
 
-#custom-power, #clock, #network, #pulseaudio {
-    padding: 8px;
+#custom-power, #pulseaudio {
+    padding: 10px;
 }
 
 @keyframes blink {
@@ -24,7 +20,13 @@ window#waybar {
     }
 }
 
+#clock {
+    margin-top: 2px;
+    margin-right: 10px;
+}
+
 #custom-power {
+    margin-left: 10px;
     margin-bottom: 3px;
 }
 
@@ -37,5 +39,6 @@ window#waybar {
 }
 
 #tray {
+    padding-top: 8px;
     padding-bottom: 10px;
 }
