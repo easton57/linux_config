@@ -1,24 +1,17 @@
 * {
-    border: none;
-    padding-top: 3px;
-    padding-right: 3px;
-    padding-left: 3px; 
     font-family: "Font Awesome", Roboto, Helvetica, Arial, sans-serif;
     font-size: 12px;
-    min-height: 10px;
 }
 
 window#waybar {
     background: rgba(0, 0, 0, .65);
     border-bottom: 3px solid transparent;
     color: white;
+    border-radius: 10px;
 }
 
-#clock, #network, #pulseaudio {
+#custom-power, #pulseaudio {
     padding: 10px;
-}
-
-#clock {
 }
 
 @keyframes blink {
@@ -27,14 +20,19 @@ window#waybar {
     }
 }
 
-#network {
+#clock {
+    margin-top: 2px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+#custom-power {
+    margin-left: 10px;
+    margin-bottom: 3px;
 }
 
 #network.disconnected {
     color: crimson;
-}
-
-#pulseaudio {
 }
 
 #pulseaudio.muted {
@@ -42,5 +40,6 @@ window#waybar {
 }
 
 #tray {
+    padding-top: 8px;
     padding-bottom: 10px;
 }
