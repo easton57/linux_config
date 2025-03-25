@@ -4,7 +4,9 @@ Contains configs for hyprland, hyprlock, hyprpaper, kitty, nvim, and waybar.
 
 ## Installation
 
-Install hyprland, hyprlock, hyprpaper, grimshot, kitty, nvim and waybar. I use fedora so that'll be with dnf or yum. Change based on your distro.
+Install hyprland, hyprlock, hyprpaper, grimshot, kitty, nvim, dunst, nm-applet and waybar. I use fedora so that'll be with dnf or yum. Change based on your distro.
+
+You can either move these config files to the .config directory or do what I do and make a symlink using ln so I can keep these in a clean git directory where I can upload changes.
 
 ## Shortcuts
 
@@ -94,3 +96,7 @@ There are others but I don't use them at this time and haven't customized them.
 ### Zenmode
 * SPACE z z: Zenmode width 90
 * SPACE z Z: Zenmode width 80
+
+### LLM-LS
+* TAB: Autofill
+* S TAB: Ignore (I think)
