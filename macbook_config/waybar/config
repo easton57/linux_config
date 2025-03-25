@@ -1,12 +1,12 @@
 {
     "layer": "top", 
-    "height": 30, 
+    "height": 25, 
     "output": "",
 
     // Choose the order of the modules
     "modules-left": ["custom/power", "network"],
     "modules-center": [],
-    "modules-right": ["tray", "pulseaudio", "clock"],
+    "modules-right": ["tray", "pulseaudio", "battery", "clock"],
     
     // Modules configuration
     "clock": {
@@ -91,5 +91,15 @@
             "reboot": "shutdown -r now",
 			"lock": "hyprlock",
 		}
+    },
+    "battery": {
+        "interval": 60,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""],
+        "max-length": 25
     }
 }

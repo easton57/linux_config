@@ -23,6 +23,7 @@ window#waybar {
 #clock {
     margin-top: 2px;
     margin-right: 10px;
+    margin-left: 10px;
 }
 
 #custom-power {
