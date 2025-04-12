@@ -89,7 +89,8 @@
 		"menu-actions": {
 			"shutdown": "shutdown now",
 			"reboot": "shutdown -r now",
-			"lock": "hyprlock"
+			"lock": "hyprlock",
+            "log_out": "hyprctl dispatch exit"
 		}
     }
 }
