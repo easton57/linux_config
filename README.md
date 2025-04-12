@@ -18,6 +18,7 @@ Install the following
 * waybar 
 * pamixer
 * libnotify
+* avizo: https://github.com/heyjuvi/avizo
 
 I use fedora so that'll be with dnf or yum. Change based on your distro.
 
