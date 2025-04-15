@@ -18,7 +18,27 @@ Install the following
 * waybar 
 * pamixer
 * libnotify
-* avizo: https://github.com/heyjuvi/avizo
+* avizo
+
+Other resources that are needed
+
+* valac
+* cargo
+* golang
+* cmake
+* rust-glib+compiletests-devel
+* sassc
+* qt5ct
+* qt6ct
+* kvantum-qt5
+* kvantum-qt6
+* lxappearance
+
+For unimformity add the following lines to /etc/environment
+
+QT_QPA_PLATFORMTHEME=qt5ct
+QT_QPA_PLATFORMTHEME_QT6=qt6ct
+QT_STYLE_OVERRIDE=kvantum
 
 I use fedora so that'll be with dnf or yum. Change based on your distro.
 

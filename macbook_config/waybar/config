@@ -45,7 +45,7 @@
         // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon}   {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-muted": "<span font=\"IcoFont\"></span>   {format_source}",
+        "format-muted": "Mute {icon}   {format_source}",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
@@ -59,25 +59,7 @@
         },
         "on-click": "pavucontrol"
     },
-    "wlr/taskbar": {
-        "format": "{icon}",
-        "icon-size": 14,
-        "icon-theme": "Numix-Circle",
-        "tooltip-format": "{title}",
-        "on-click": "activate",
-        "on-click-middle": "close",
-        "ignore-list": [
-            "Alacritty"
-        ],
-        "app_ids-mapping": {
-            "firefoxdeveloperedition": "firefox-developer-edition"
-        },
-        "rewrite": {
-            "Firefox Web Browser": "Firefox",
-            "Foot Server": "Terminal"
-        }
-    },
-    "tray": {
+   "tray": {
         "icon-size": 20,
         "spacing": 10
     },
@@ -90,6 +72,7 @@
 			"shutdown": "shutdown now",
             "reboot": "shutdown -r now",
 			"lock": "hyprlock",
+            "log_out": "hyprctl dispatch exit"
 		}
     },
     "battery": {
