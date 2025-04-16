@@ -6,7 +6,7 @@
     // Choose the order of the modules
     "modules-left": ["custom/power", "network", "hyprland/workspaces"],
     "modules-center": [],
-    "modules-right": ["tray", "pulseaudio", "battery", "clock"],
+    "modules-right": ["tray", "pulseaudio", "cpu", "battery", "clock"],
     
     // Modules configuration
     "clock": {
@@ -94,5 +94,10 @@
             "default": ""
         },
         "sort-by-number": true
+    },
+    "cpu": {
+        "interval": 10,
+        "format": "{}% ",
+        "max-length": 10
     }
 }
