@@ -4,7 +4,7 @@
     "output": "",
 
     // Choose the order of the modules
-    "modules-left": ["custom/power", "network"],
+    "modules-left": ["custom/power", "network", "hyprland/workspaces"],
     "modules-center": [],
     "modules-right": ["tray", "pulseaudio", "battery", "clock"],
     
@@ -84,5 +84,15 @@
         "format": "{capacity}% {icon}",
         "format-icons": ["", "", "", "", ""],
         "max-length": 25
+    },
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate",
+        "format-icons": {
+            "urgent": "",
+            "active": "",
+            "default": ""
+        },
+        "sort-by-number": true
     }
 }
