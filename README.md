@@ -122,9 +122,7 @@ There are others but I don't use them at this time and haven't customized them.
 * SPACE V H: Help Tags
 
 ### Trouble
-* SPACE T T: Toggle Trouble
-* SPACE [ T: Next Trouble
-* SPACE ] T: Previous Trouble
+* SPACE X X: Toggle Trouble
 
 ### Undotree
 * SPACE U: View tree
