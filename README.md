@@ -19,6 +19,7 @@ Install the following
 * pamixer
 * libnotify
 * avizo
+* zsh (oh my zsh)
 
 Other resources that are needed
 
