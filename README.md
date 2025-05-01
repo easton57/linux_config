@@ -35,12 +35,6 @@ Other resources that are needed
 * kvantum-qt6
 * lxappearance
 
-For unimformity add the following lines to /etc/environment
-
-QT_QPA_PLATFORMTHEME=qt5ct
-QT_QPA_PLATFORMTHEME_QT6=qt6ct
-QT_STYLE_OVERRIDE=kvantum
-
 I use fedora so that'll be with dnf or yum. Change based on your distro.
 
 You can either move these config files to the .config directory or do what I do and make a symlink using ln so I can keep these in a clean git directory where I can upload changes.
@@ -88,6 +82,7 @@ There are others but I don't use them at this time and haven't customized them.
 * SPACE D C: Open Console
 * SPACE B: Toggle Breakpoint
 * SPACE SHIFT B: Set Breakpoint with condiion
+* F7: Debug disconnect
 * F8: Debug continue/launch
 * F10: Debug Step Over
 * F11: Debug Step Into
