@@ -39,6 +39,7 @@ return {
             local dap = require("dap")
             dap.set_log_level("INFO")
 
+            vim.keymap.set("n", "<F7>", dap.disconnect, { desc = "Debug: Disconnect" })
             vim.keymap.set("n", "<F8>", dap.continue, { desc = "Debug: Continue" })
             vim.keymap.set("n", "<F10>", dap.step_over, { desc = "Debug: Step Over" })
             vim.keymap.set("n", "<F11>", dap.step_into, { desc = "Debug: Step Into" })
