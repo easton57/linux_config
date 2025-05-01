@@ -10,7 +10,7 @@ Install the following
 * hyprlock
 * hyprpaper
 * grimshot
-* kitty
+* ghostty
 * nvim
 * dunst
 * tmux 
