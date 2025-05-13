@@ -1,5 +1,5 @@
 function ColorMyPencils(color)
-	color = color or "rose-pine-moon"
+	color = color or "aura-dark"
 	vim.cmd.colorscheme(color)
 
 	vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
@@ -86,6 +86,14 @@ return {
             ColorMyPencils();
         end
     },
-
-
+    { 'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' },
+        {
+            "baliestri/aura-theme",
+            lazy = false,
+            priority = 1000,
+            config = function(plugin)
+            vim.opt.rtp:append(plugin.dir .. "/packages/neovim")
+            vim.cmd([[colorscheme aura-dark]])
+        end
+    },
 }
