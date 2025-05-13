@@ -79,3 +79,6 @@ vim.keymap.set("n", "<leader><leader>", function()
 end)
 
 vim.keymap.set('n', '<leader>d', vim.diagnostic.open_float, { desc = "Show diagnostics for line" })
+
+vim.keymap.set('n', '<leader>sv', '<cmd>vsplit<CR>')
+vim.keymap.set('n', '<leader>sh', '<cmd>split<CR>')
