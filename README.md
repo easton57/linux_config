@@ -9,6 +9,7 @@ Install the following
 * hyprland
 * hyprlock
 * hyprpaper
+* hypridle (and all of its dependencies)
 * grimshot
 * ghostty
 * nvim
