@@ -10,7 +10,7 @@ MONITOR=$(hyprctl activeworkspace -j | jq -r '.monitor')
 # Set GDK_SCALE based on monitor
 case "$MONITOR" in
   eDP-1)
-    export GDK_SCALE=1
+    export GDK_SCALE=2
     ;;
   *)
     export GDK_SCALE=1
