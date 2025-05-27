@@ -137,7 +137,7 @@ return {
                 request = 'launch';
                 showLog = false;
                 program = "${file}";
-                    dlvToolPath = vim.fn.exepath('/home/eseidel/go/bin/dlv')  -- Adjust to where delve is installed
+                    dlvToolPath = vim.fn.exepath('/home/eseidel/.local/share/nvim/mason/bin/dlv')  -- Adjust to where delve is installed
                 },
             }
         end
