@@ -52,3 +52,10 @@ window#waybar {
     color: crimson;
 }
 
+#battery.Charging {
+    color: green;
+}
+
+#battery.critical {
+    color: red;
+}

@@ -78,8 +78,7 @@
     "battery": {
         "interval": 60,
         "states": {
-            "warning": 30,
-            "critical": 15
+            "critical": 20,
         },
         "format": "{capacity}% {icon}",
         "format-icons": ["", "", "", "", ""],
