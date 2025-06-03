@@ -42,6 +42,11 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 #
+
+# Background
 background = #000000
 background-opacity = .90
 background-blur = true
+
+# Font
+font-size = 11
