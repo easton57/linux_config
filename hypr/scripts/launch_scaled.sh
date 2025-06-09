@@ -10,7 +10,7 @@ MONITOR=$(hyprctl activeworkspace -j | jq -r '.monitor')
 # Set GDK_SCALE based on monitor
 case "$MONITOR" in
   eDP-1)
-    export GDK_SCALE=2
+    export GDK_SCALE=1
     ;;
   *)
     export GDK_SCALE=1
@@ -21,12 +21,15 @@ echo "Launching: $APP"
 
 # Launch the app
 # Chromium based
-if [[ "$APP" -eq "brave-browser" ]] || [[ "$APP" -eq "steam" ]]; then 
+if [[ "$APP" == "brave-browser" ]] || [[ "$APP" == "steam" ]]; then 
+    echo "Chromium based app"
     $APP --enable-features=VaapiVideoDecodeLinuxGL --use-gl=angle --use-angle=gl --ozone-platform=wayland
 # Electron based
-elif [[ "$APP" -eq "legcord" ]]; then 
+elif [[ "$APP" == "legcord" ]]; then 
+    echo "Electron based app"
     $APP -enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=wayland
 else
+    echo "No rules applied"
     exec $APP
 fi
 
