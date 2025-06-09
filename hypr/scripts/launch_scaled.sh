@@ -17,6 +17,16 @@ case "$MONITOR" in
     ;;
 esac
 
+echo "Launching: $APP"
+
 # Launch the app
-exec $APP
+# Chromium based
+if [[ "$APP" -eq "brave-browser" ]] || [[ "$APP" -eq "steam" ]]; then 
+    $APP --enable-features=VaapiVideoDecodeLinuxGL --use-gl=angle --use-angle=gl --ozone-platform=wayland
+# Electron based
+elif [[ "$APP" -eq "legcord" ]]; then 
+    $APP -enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=wayland
+else
+    exec $APP
+fi
 
