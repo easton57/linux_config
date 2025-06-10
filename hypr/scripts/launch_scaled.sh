@@ -28,6 +28,9 @@ if [[ "$APP" == "brave-browser" ]] || [[ "$APP" == "steam" ]]; then
 elif [[ "$APP" == "legcord" ]]; then 
     echo "Electron based app"
     $APP -enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=wayland
+#elif [[ "$APP" == *"spotify"* ]] || [[ "$APP" == *"bitwarden"* ]]; then
+#    echo "Flatpak installed Electron app"
+#    $APP --socket=wayland
 else
     echo "No rules applied"
     exec $APP
