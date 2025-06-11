@@ -23,13 +23,17 @@ echo "Launching: $APP"
 # Chromium based
 if [[ "$APP" == "brave-browser" ]] || [[ "$APP" == "steam" ]]; then 
     echo "Chromium based app"
-    $APP --enable-features=VaapiVideoDecodeLinuxGL --use-gl=angle --use-angle=gl --ozone-platform=wayland
+    exec $APP --enable-features=VaapiVideoDecodeLinuxGL --use-gl=angle --use-angle=gl --ozone-platform=wayland
 # Electron based
 elif [[ "$APP" == "legcord" ]]; then 
     echo "Electron based app"
-    $APP -enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=wayland
+    exec $APP -enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=wayland
 #elif [[ "$APP" == *"spotify"* ]] || [[ "$APP" == *"bitwarden"* ]]; then
 #    echo "Flatpak installed Electron app"
+# Godot
+elif [[ "$APP" == "godot" ]]; then 
+    echo "Godot"
+    exec $APP --display-driver wayland
 #    $APP --socket=wayland
 else
     echo "No rules applied"
