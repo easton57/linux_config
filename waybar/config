@@ -113,5 +113,30 @@
     	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
     	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
         "on-click": "blueman-applet"
+    },
+    "custom/gpu-toggle": {
+        "exec": "~/.config/waybar/scripts/gpu-toggle.sh waybar",
+        "return-type": "json",
+        "interval": 10,
+        "on-click": "~/.config/waybar/scripts/gpu-toggle.sh toggle && notify-send 'GPU Toggle' 'GPU switched. Reboot required to take effect.'",
+        "on-click-right": "~/.config/waybar/scripts/gpu-toggle.sh status | notify-send 'GPU Status' \"$(cat)\"",
+        "tooltip": true,
+        "format": "GPU",
+        "format-icons": {
+            "nvidia": "󰢮",
+            "integrated": "󰇄",
+            "pending": "󰚥"
+        }
+    },
+    // Toggle for lid sleep
+    "custom/lid-toggle": {
+        "exec": "~/.config/waybar/scripts/lid-toggle.sh status",
+        "return-type": "json",
+        "on-click": "~/.config/waybar/scripts/lid-toggle.sh toggle",
+        "format": "{icon}",
+        "format-icons": {
+            "sleep-true": "L-S",
+            "sleep-false": "L-F"
+        }
     }
 }
