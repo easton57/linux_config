@@ -280,4 +280,4 @@ windowrulev2 = nodim, class:^(Brave-browser)$
 bind = , power-button, exec, hyprlock && systemctl suspend
 
 # Hyprlock
-bindl = , switch:on:Lid Switch, exec, hyprlock
+#bindl = , switch:on:Lid Switch, exec, hyprlock

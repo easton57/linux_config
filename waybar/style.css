@@ -8,7 +8,7 @@ window#waybar {
     color: white;
 }
 
-#custom-gpu-toggle, #bluetooth, #custom-power, #network, #tray, #pulseaudio, #battery, #clock, #workspaces, #cpu, #memory {
+#bluetooth, #custom-power, #network, #tray, #pulseaudio, #battery, #clock, #workspaces, #cpu, #memory, #idle_inhibitor, #custom-lidswitch {
     background: rgba(0, 0, 0, 0.65);
     border-radius: 20px;
     margin-top: 7px;
@@ -27,15 +27,9 @@ window#waybar {
     padding-left: 15px;
 }
 
-#tray {
-}
-
-#clock {
-}
-
 #custom-power {
-    padding-left: 17;
-    padding-right: 17;
+    padding-left: 17px;
+    padding-right: 17px;
 }
 
 #custom-power menu {

@@ -1,41 +1,55 @@
 {
-    "layer": "top", 
-    "height": 25, 
+    "layer": "top",
+    "height": 25,
     "output": "",
-
     // Choose the order of the modules
-    "modules-left": ["custom/power", "network", "hyprland/workspaces"],
-    "modules-center": ["clock", ],
-    "modules-right": ["tray", "bluetooth", "pulseaudio", "cpu", "memory", "battery", ],
-    
+    "modules-left": [
+        "custom/power",
+        "custom/lidswitch",
+        "idle_inhibitor",
+        "network",
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "tray",
+        "bluetooth",
+        "pulseaudio",
+        "cpu",
+        "memory",
+        "battery"
+    ],
     // Modules configuration
     "clock": {
-    	"format": "{:%I:%M %p}",
+        "format": "{:%I:%M %p}",
         "format-alt": "{:%Y-%m-%d}",
         "tooltip-format": "<tt><small>{calendar}</small></tt>",
         "calendar": {
-                    "mode"          : "year",
-                    "mode-mon-col"  : 3,
-                    "weeks-pos"     : "right",
-                    "on-scroll"     : 1,
-                    "format": {
-                              "months":     "<span color='#ffead3'><b>{}</b></span>",
-                              "days":       "<span color='#ecc6d9'><b>{}</b></span>",
-                              "weeks":      "<span color='#99ffdd'><b>W{}</b></span>", "weekdays":   "<span color='#ffcc66'><b>{}</b></span>",
-                              "today":      "<span color='#ff6699'><b><u>{}</u></b></span>"
-                              }
-                    },
-        "actions":  {
-                    "on-click-right": "mode",
-                    "on-scroll-up": "tz_up",
-                    "on-scroll-down": "tz_down",
-                    "on-scroll-up": "shift_up",
-                    "on-scroll-down": "shift_down"
-                    }
+            "mode": "year",
+            "mode-mon-col": 3,
+            "weeks-pos": "right",
+            "on-scroll": 1,
+            "format": {
+                "months": "<span color='#ffead3'><b>{}</b></span>",
+                "days": "<span color='#ecc6d9'><b>{}</b></span>",
+                "weeks": "<span color='#99ffdd'><b>W{}</b></span>",
+                "weekdays": "<span color='#ffcc66'><b>{}</b></span>",
+                "today": "<span color='#ff6699'><b><u>{}</u></b></span>"
+            }
+        },
+        "actions": {
+            "on-click-right": "mode",
+            "on-scroll-up": "tz_up",
+            "on-scroll-down": "tz_down",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} {signalStrength}%", 
+        "format-wifi": "{essid} {signalStrength}%",
         "format-ethernet": "{ifname}: {ipaddr}/{cidr}",
         "format-linked": "{ifname} (No IP)",
         "format-disconnected": "Disconnected ⚠",
@@ -55,25 +69,29 @@
             "phone": "",
             "portable": "",
             "car": "",
-            "default": ["", "", ""]
+            "default": [
+                "",
+                "",
+                ""
+            ]
         },
         "on-click": "pavucontrol"
     },
-   "tray": {
+    "tray": {
         "icon-size": 20,
         "spacing": 10
     },
     "custom/power": {
-        "format" : "⏻",
-		"tooltip": false,
-		"menu": "on-click",
-		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
-		"menu-actions": {
-			"shutdown": "shutdown now",
+        "format": "⏻",
+        "tooltip": false,
+        "menu": "on-click",
+        "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
+        "menu-actions": {
+            "shutdown": "shutdown now",
             "reboot": "shutdown -r now",
-			"lock": "hyprlock",
+            "lock": "hyprlock",
             "log_out": "hyprctl dispatch exit"
-		}
+        }
     },
     "battery": {
         "interval": 60,
@@ -81,7 +99,13 @@
             "critical": 20,
         },
         "format": "{capacity}% {icon}",
-        "format-icons": ["", "", "", "", ""],
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ],
         "max-length": 25
     },
     "hyprland/workspaces": {
@@ -105,38 +129,28 @@
         "max-length": 10
     },
     "bluetooth": {
-    	// "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
-    	"format": " {status}",
-    	"format-disabled": "", // an empty format will hide the module
-    	"format-connected": " {num_connections} connected",
-    	"tooltip-format": "{controller_alias}\t{controller_address}",
-    	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
-    	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+        // "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
+        "format": " {status}",
+        "format-disabled": "", // an empty format will hide the module
+        "format-connected": " {num_connections} connected",
+        "tooltip-format": "{controller_alias}\t{controller_address}",
+        "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
+        "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
         "on-click": "blueman-applet"
     },
-    "custom/gpu-toggle": {
-        "exec": "~/.config/waybar/scripts/gpu-toggle.sh waybar",
-        "return-type": "json",
-        "interval": 10,
-        "on-click": "~/.config/waybar/scripts/gpu-toggle.sh toggle && notify-send 'GPU Toggle' 'GPU switched. Reboot required to take effect.'",
-        "on-click-right": "~/.config/waybar/scripts/gpu-toggle.sh status | notify-send 'GPU Status' \"$(cat)\"",
-        "tooltip": true,
-        "format": "GPU",
-        "format-icons": {
-            "nvidia": "󰢮",
-            "integrated": "󰇄",
-            "pending": "󰚥"
-        }
-    },
-    // Toggle for lid sleep
-    "custom/lid-toggle": {
-        "exec": "~/.config/waybar/scripts/lid-toggle.sh status",
-        "return-type": "json",
-        "on-click": "~/.config/waybar/scripts/lid-toggle.sh toggle",
+    "idle_inhibitor": {
         "format": "{icon}",
         "format-icons": {
-            "sleep-true": "L-S",
-            "sleep-false": "L-F"
+            "activated": "",
+            "deactivated": ""
         }
+    },
+    "custom/lidswitch": {
+        "exec": "$HOME/.config/waybar/scripts/lidswitch status",
+        "interval": "once",
+        "signal": 3,
+        "format": "{}",
+        "return-type": "json",
+        "on-click": "$HOME/.config/waybar/scripts/lidswitch toggle"
     }
 }
