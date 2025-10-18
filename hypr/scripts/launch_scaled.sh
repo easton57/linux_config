@@ -25,7 +25,7 @@ if [[ "$APP" == "brave-browser" ]] || [[ "$APP" == "steam" ]]; then
     echo "Chromium based app"
     exec $APP --enable-features=VaapiVideoDecodeLinuxGL --use-gl=angle --use-angle=gl --ozone-platform=wayland
 # Electron based
-elif [[ "$APP" == "legcord" ]] || [[ "$APP" == "/home/eseidel/Applications/Cursor.AppImage" ]]; then 
+elif [[ "$APP" == "legcord" ]] || [[ "$APP" == "/home/eseidel/Applications/Cursor*" ]]; then 
     echo "Electron based app"
     exec $APP -enable-features=UseOzonePlatform,WaylandWindowDecorations --ozone-platform-hint=wayland
 #elif [[ "$APP" == *"spotify"* ]] || [[ "$APP" == *"bitwarden"* ]]; then

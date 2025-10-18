@@ -1,6 +1,5 @@
 *hibernate{
     font-family: "Font Awesome", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 12px;
 }
 
 window#waybar {
@@ -11,25 +10,23 @@ window#waybar {
 #bluetooth, #custom-power, #network, #tray, #pulseaudio, #battery, #clock, #workspaces, #cpu, #memory, #idle_inhibitor, #custom-lidswitch {
     background: rgba(0, 0, 0, 0.65);
     border-radius: 20px;
-    margin-top: 7px;
-    margin-left: 7px;
-    margin-right: 7px;
-    padding: 10px;
-    padding-right: 15px;
-    padding-left: 15px;
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-right: 3px;
+    padding: 7px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 #workspaces {
-    background: rgba(0, 0, 0, 0.65);
-    border-radius: 20px;
     padding: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
 }
 
 #custom-power {
-    padding-left: 17px;
-    padding-right: 17px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 #custom-power menu {
@@ -52,27 +49,6 @@ window#waybar {
 
 #battery.critical {
     color: red;
-}
-
-/* GPU theme */
-/* NVIDIA GPU active - red/orange theme */
-#custom-gpu-toggle.nvidia {
-    color: green;
-}
-
-#custom-gpu-toggle:hover {
-    color: orange;
-}
-
-/* Integrated GPU active - green theme */
-#custom-gpu-toggle.integrated {
-    color: blue;
-}
-
-/* Pending reboot - yellow theme */
-#custom-gpu-toggle.pending {
-    color: #ffc107;
-    animation: pulse 2s infinite;
 }
 
 @keyframes pulse {

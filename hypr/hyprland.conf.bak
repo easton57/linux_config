@@ -51,7 +51,7 @@ exec-once = systemctl --user start hyprpolkitagent
 exec-once = waybar & hyprpaper & kwalletd6 & avizo-service & dunst & nextcloud & nm-applet --indicator & blueman-applet & disown
 
 # For waybar
-exec-once = /home/eseidel/.config/waybar/scripts/lidswitch on
+# exec-once = /home/eseidel/.config/waybar/scripts/lidswitch on
 
 #############################
 ### ENVIRONMENT VARIABLES ###
