@@ -1,5 +1,5 @@
-*hibernate{
-    font-family: "Font Awesome", Roboto, Helvetica, Arial, sans-serif;
+* {
+    font-family: Roboto, Helvetica, Arial, sans-serif, "Font Awesome 7 Free";
 }
 
 window#waybar {
@@ -10,16 +10,14 @@ window#waybar {
 #bluetooth, #custom-power, #network, #tray, #pulseaudio, #battery, #clock, #workspaces, #cpu, #memory, #idle_inhibitor, #custom-lidswitch {
     background: rgba(0, 0, 0, 0.65);
     border-radius: 20px;
-    margin-top: 3px;
+    margin-top: 5px;
     margin-left: 3px;
     margin-right: 3px;
-    padding: 7px;
     padding-right: 10px;
     padding-left: 10px;
 }
 
 #workspaces {
-    padding: 1px;
     padding-right: 10px;
     padding-left: 10px;
 }
@@ -56,3 +54,17 @@ window#waybar {
     50% { opacity: 0.6; }
     100% { opacity: 1; }
 }
+
+#workspaces button {
+    color: #bbb;             /* inactive */
+}
+
+#workspaces button.active {
+    color: white;            /* active workspace */
+}
+
+#workspaces button:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.25);
+}
+
