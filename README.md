@@ -37,6 +37,7 @@ Other resources that are needed
 * lxappearance
 
 I use fedora so that'll be with dnf or yum. Change based on your distro.
+(Can use on arch)
 
 You can either move these config files to the .config directory or do what I do and make a symlink using ln so I can keep these in a clean git directory where I can upload changes.
 
