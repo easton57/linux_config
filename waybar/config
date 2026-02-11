@@ -10,7 +10,6 @@
         "hyprland/workspaces"
     ],
     "modules-center": [
-        "clock"
     ],
     "modules-right": [
         "tray",
@@ -18,7 +17,8 @@
         "pulseaudio",
         "cpu",
         "memory",
-        "battery"
+        "battery",
+        "clock"
     ],
     // Modules configuration
     "clock": {
@@ -98,6 +98,7 @@
             "critical": 20,
         },
         "format": "{capacity}% {icon}",
+        "format-charging": "+{capacity}% {icon}",
         "format-icons": [
             "",
             "",
