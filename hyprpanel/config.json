@@ -53,9 +53,9 @@
     }
   },
   "theme.bar.floating": false,
-  "theme.bar.menus.monochrome": false,
-  "wallpaper.pywal": false,
-  "theme.bar.menus.background": "#282c34",
+  "theme.bar.menus.monochrome": true,
+  "wallpaper.pywal": true,
+  "theme.bar.menus.background": "#11111b",
   "theme.bar.background": "#282c34",
   "theme.bar.buttons.media.icon": "#61afef",
   "theme.bar.buttons.media.text": "#61afef",
@@ -428,12 +428,13 @@
   "theme.bar.buttons.modules.worldclock.icon": "#98c379",
   "theme.bar.buttons.modules.worldclock.icon_background": "#c678dd",
   "theme.bar.buttons.modules.worldclock.border": "#98c379",
-  "wallpaper.enable": false,
+  "wallpaper.enable": true,
   "theme.bar.menus.opacity": 100,
   "theme.bar.transparent": true,
   "menus.clock.time.hideSeconds": true,
   "bar.workspaces.show_icons": true,
   "bar.workspaces.show_numbered": false,
   "theme.bar.buttons.workspaces.enableBorder": false,
-  "bar.clock.format": "%a %b %d  %I:%M %p"
+  "bar.clock.format": "%a %b %d  %I:%M %p",
+  "wallpaper.image": ""
 }
