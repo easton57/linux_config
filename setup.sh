@@ -38,3 +38,8 @@ systemctl enable --user --now hypr/hypridle.service
 
 # sway osd backend
 sudo systemctl enable --now swayosd-libinput-backend.service
+
+# pywal
+pip install pywal
+
+# symlinks

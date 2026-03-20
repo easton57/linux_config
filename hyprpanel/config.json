@@ -436,5 +436,7 @@
   "bar.workspaces.show_numbered": false,
   "theme.bar.buttons.workspaces.enableBorder": false,
   "bar.clock.format": "%a %b %d  %I:%M %p",
-  "wallpaper.image": ""
+  "wallpaper.image": "",
+  "menus.dashboard.shortcuts.enabled": false,
+  "menus.dashboard.directories.enabled": false
 }
