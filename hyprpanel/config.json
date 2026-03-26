@@ -7,15 +7,16 @@
     "0": {
       "left": [
         "dashboard",
+        "hypridle",
         "workspaces",
-        "windowtitle"
+        "windowtitle",
+        "network"
       ],
-      "middle": [
-        "media"
-      ],
+      "middle": [],
       "right": [
+        "cpu",
+        "ram",
         "volume",
-        "network",
         "bluetooth",
         "battery",
         "systray",
@@ -435,11 +436,13 @@
   "theme.bar.transparent": true,
   "menus.clock.time.hideSeconds": false,
   "bar.workspaces.show_icons": false,
-  "bar.workspaces.show_numbered": false,
+  "bar.workspaces.show_numbered": true,
   "theme.bar.buttons.workspaces.enableBorder": false,
   "bar.clock.format": "%a %b %d  %I:%M:%S %p",
   "wallpaper.image": "/home/eseidel/Pictures/Wallpapers/purple-abstract-3840x2160-24770.jpg",
   "menus.dashboard.shortcuts.enabled": true,
   "menus.dashboard.directories.enabled": true,
-  "notifications.position": "top"
+  "notifications.position": "top right",
+  "bar.launcher.autoDetectIcon": false,
+  "theme.bar.buttons.dashboard.enableBorder": false
 }

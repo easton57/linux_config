@@ -9,7 +9,7 @@ sudo dnf config-manager setopt fedora-cisco-openh264.enabled=1
 
 # Install packages
 sudo dnf install hyprland hypridle hyprpaper wofi neovim nm-applet blueman-applet ghostty \
-    waybar dunst grimshot steam zsh fastfetch btop swayosd kf6-kwallet -y
+    waybar hyprlauncher dunst grimshot steam zsh fastfetch btop swayosd kf6-kwallet -y
 
 # Install Brave
 curl -fsS https://dl.brave.com/install.sh | sh
