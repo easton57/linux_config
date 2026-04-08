@@ -444,5 +444,6 @@
   "menus.dashboard.directories.enabled": true,
   "notifications.position": "top right",
   "bar.launcher.autoDetectIcon": false,
-  "theme.bar.buttons.dashboard.enableBorder": false
+  "theme.bar.buttons.dashboard.enableBorder": false,
+  "theme.bar.buttons.systray.enableBorder": false
 }
